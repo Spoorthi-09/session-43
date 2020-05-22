@@ -17,18 +17,40 @@
       {
         border-spacing:15px;
       }
-
+      table#t01
+      {
+        background-color:red;
+      }
+      table#t02
+      {
+        background-color:yellow;
+      }
       </style>
   </head>
   <body>
-<table style = "width:100%">
+    <table id = "t01" style = "width:100%">
   <tr>
-    <th>first</th>
-    <th>last</th>
+    <th rowspan = "2">first</th>
+    <td>i</td>
+    <td>j</td>
   </tr>
   <tr>
     <td>jill</td>
     <td>jack</td>
     </tr>
+    </table>
+    <br>
+<table id = "t02" style = "width:100%">
+  <tr>
+    <th>first</th>
+    <th colspan = "3">last</th>
+  </tr>
+  <tr>
+    <td>jill</td>
+    <td>jack</td>
+    <td>i</td>
+    <td>j</td>
+    </tr>
+    </table>
   </body>
 </html>
